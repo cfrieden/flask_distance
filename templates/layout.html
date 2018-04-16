@@ -1,0 +1,16 @@
+<!doctype html>
+<head>
+  <title>Distance from Enveritas</title>
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class=page>
+    <h1>Distance from Enveritas</h1>
+    {% block body %}
+    {% endblock %}
+    {% for message in get_flashed_messages() %}
+      <div class=flash>{{ message }}</div>
+    {% endfor %}
+
+  </div>
+</body>

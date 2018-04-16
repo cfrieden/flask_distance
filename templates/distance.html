@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block body %}
+    <form action="{{ url_for('distance') }}" method=post class=distance>
+      <dl>
+        <dt>Longitude: <input type=number size=30 name=longitude min="-180" max="180" step=".0000001" required>
+        <dt>Latitude: <input type=number size=30 name=latitude min="-90" max="90" step=".0000001" required></textarea>
+        <dd><input type=submit value=Calculate>
+      </dl>
+    </form>
+{% endblock %}
