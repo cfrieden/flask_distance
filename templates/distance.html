@@ -2,8 +2,10 @@
 {% block body %}
     <form action="{{ url_for('distance') }}" method=post class=distance>
       <dl>
-        <dt>Longitude: <input type=number size=30 name=longitude min="-180" max="180" step=".0000001" required>
-        <dt>Latitude: <input type=number size=30 name=latitude min="-90" max="90" step=".0000001" required></textarea>
+        <dt>Origin Longitude: <input type=number size=30 name=origin_longitude min="-180" max="180" step=".0000001" value="40.7511532" required>
+        <dt>Origin Longitude: <input type=number size=30 name=origin_latitude min="-180" max="180" step=".0000001" value="-73.9786299" required>
+        <dt>Destination Longitude: <input type=number size=30 name=longitude min="-180" max="180" step=".0000001" required>
+        <dt>Destination Latitude: <input type=number size=30 name=latitude min="-90" max="90" step=".0000001" required></textarea>
         <dd><input type=submit value=Calculate>
       </dl>
     </form>
